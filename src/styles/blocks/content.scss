@@ -11,17 +11,32 @@
   display: flex;
   flex-direction: column;
   max-width: 200px;
-  padding: 29px 14px 14px;
+  padding: 14px;
   margin-bottom: 50px;
   background: #fff;
-  border: 1px solid #f3f3f3;
-  border-radius: 5px;
+  border: $card-border solid $cardBorderColor;
+  border-radius: $cardBorderRadius;
 
-  &__photo {
+  &__img-block {
+    display: flex;
+    justify-content: center;
+    padding: 15px 5px;
+    margin-bottom: $imgBottomMargin;
+    transition: transform 400ms;
+  
+    &:hover {
+      border: $img-border solid $cardBorderColor;
+      transform: scale($imgScale);
+      margin-right: $HoverLeftAndRigthMArgin;
+      margin-bottom: $HoverTopMargin;
+      margin-left: $HoverLeftAndRigthMArgin;
+    }
+  }
+
+  &__img {
     width: 160px;
     height: 134px;
     margin: auto;
-    margin-bottom: 45px;
   }
   
   &__title {
@@ -99,8 +114,8 @@
   text-transform: uppercase;
   color: white;
   background: $text-nav-color;
-  border: 1px solid $text-nav-color;
-  border-radius: 5px;
+  border: $cardButtonBorder solid $text-nav-color;
+  border-radius: $cardButtonBorderRadius;
 
   &:hover {
     background: white;
