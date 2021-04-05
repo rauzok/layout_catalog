@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: auto;
   width: 1024px;
@@ -17,15 +17,6 @@
   background: #fff;
   border: $card-border solid $cardBorderColor;
   border-radius: $cardBorderRadius;
-
-  // &__img-block {
-  //   box-sizing: initial;
-  //   display: flex;
-  //   justify-content: center;
-  //   padding: 15px 5px;
-  //   margin-bottom: $imgBottomMargin;
-  //   transition: transform 400ms;
-  // }
 
   &__img {
     box-sizing: initial;
