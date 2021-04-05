@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+
   padding: $header-padding;
 
   box-shadow: $header-shadow;
@@ -49,6 +49,7 @@
     text-decoration: none;
     text-transform: $nav-text-transform;
     color: $text-color;
+    transition: $transitionDuration;
   }
   
   .is-active {
