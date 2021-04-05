@@ -11,6 +11,7 @@ $star-size: 15px;
 $card-border: 1px;
 $img-border: 3px;
 $imgScale: 1.2;
+$transitionDuration: 400ms;
 $imgBottomMargin: 30px;
 $HoverTopMargin: ($imgBottomMargin / $imgScale) - $card-border;
 $HoverLeftAndRigthMArgin: $img-border - $card-border;
