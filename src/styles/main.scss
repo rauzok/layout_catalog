@@ -1,5 +1,9 @@
-@import "./utils/mixins";
 @import "./utils/reset";
+@import "./utils/generals";
 @import "./utils/variables";
-@import "./blocks/content.scss";
+@import "./utils/mixins";
+
 @import "./blocks/header.scss";
+@import "./blocks/content.scss";
+@import "./blocks/price.scss";
+@import "./blocks/stars.scss";
