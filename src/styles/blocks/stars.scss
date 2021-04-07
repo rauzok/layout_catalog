@@ -1,0 +1,14 @@
+.stars {
+
+  &__star {
+    @include star-size ($star-size);
+    margin-right: 4px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/images/star.svg);
+  
+    &:nth-child(-n + #{$rating}) {
+      background-image: url(/images/star-active.svg);
+    }
+  }
+}
